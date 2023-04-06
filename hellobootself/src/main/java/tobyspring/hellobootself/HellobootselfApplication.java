@@ -1,6 +1,5 @@
 package tobyspring.hellobootself;
 
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
 import org.springframework.boot.web.servlet.server.ServletWebServerFactory;
