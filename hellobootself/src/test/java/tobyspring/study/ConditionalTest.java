@@ -32,7 +32,6 @@ public class ConditionalTest {
 
     }
 
-
     @Retention(RetentionPolicy.RUNTIME)
     @Target(ElementType.TYPE)
     @Conditional(BooleanCondition.class)
