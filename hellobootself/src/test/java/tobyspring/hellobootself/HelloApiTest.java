@@ -17,7 +17,7 @@ public class HelloApiTest {
         String parameter = "Spring";
 
         //when
-        ResponseEntity<String> response = rest.getForEntity("http://localhost:8080/hello?name={name}", String.class, parameter);
+        ResponseEntity<String> response = rest.getForEntity("http://localhost:8080/app/hello?name={name}", String.class, parameter);
 
         //then
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
@@ -32,7 +32,7 @@ public class HelloApiTest {
         String parameter = "Spring";
 
         //when
-        ResponseEntity<String> response = rest.getForEntity("http://localhost:8080/hello?name=", String.class);
+        ResponseEntity<String> response = rest.getForEntity("http://localhost:8080/app/hello?name=", String.class);
 
         //then
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.INTERNAL_SERVER_ERROR);
