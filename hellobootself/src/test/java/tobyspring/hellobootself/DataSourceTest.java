@@ -2,12 +2,13 @@ package tobyspring.hellobootself;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.jdbc.JdbcTest;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-@HelloBootSelfTest
+@JdbcTest
 public class DataSourceTest {
     @Autowired
     DataSource dataSource;
@@ -15,7 +16,6 @@ public class DataSourceTest {
     @Test
     void connect() throws SQLException {
         Connection connection = dataSource.getConnection();
-        dataSource.toString();
         connection.close();
     }
 }
