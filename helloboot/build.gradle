@@ -15,6 +15,8 @@ repositories {
 dependencies {
     implementation('org.springframework.boot:spring-boot-starter-web')
     implementation('org.springframework.boot:spring-boot-starter-jdbc')
+    implementation 'org.hsqldb:hsqldb-j5:2.2.4'
+    implementation 'hsqldb:hsqldb:1.8.0.10'
     runtimeOnly('com.h2database:h2:2.1.214')
 
 
